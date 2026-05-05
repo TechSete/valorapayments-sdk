@@ -1,8 +1,8 @@
 package tech.techsete.valorapayments_sdk.utils;
 
 import org.junit.jupiter.api.Test;
-import tools.jackson.core.JsonParser;
-import tools.jackson.databind.DeserializationContext;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.DeserializationContext;
 
 import java.io.IOException;
 
