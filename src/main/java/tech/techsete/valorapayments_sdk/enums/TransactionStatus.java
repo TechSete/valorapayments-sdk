@@ -27,7 +27,7 @@ public enum TransactionStatus {
     @JsonCreator
     public static TransactionStatus fromValue(String value) {
         return Arrays.stream(values())
-                .filter(status -> status.value.equals(value))
+                .filter(status -> status.value.equalsIgnoreCase(value))
                 .findFirst()
                 .orElseThrow(() -> new IllegalArgumentException("Status de transação inválido: " + value));
     }
